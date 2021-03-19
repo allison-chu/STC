@@ -1,227 +1,285 @@
-@font-face{
-  font-family: 'Carista';
-  src: url("Assets/Carista.ttf") format('opentype');}
+@font-face {
+  font-family: "Carista";
+  src: url("Assets/Carista.ttf") format("opentype");
+}
 
-@font-face{
-  font-family: 'CenturyGothic'; src: url(../Fonts/CenturyGothic.ttf) format('truetype');}
+@font-face {
+  font-family: "CenturyGothic";
+  src: url(../Fonts/CenturyGothic.ttf) format("truetype");
+}
 
+body {
+  font-size: 1.5rem;
+}
+.welcomeCard,
+.brownPanel,
+.whitePanel,
+.whiteHeader,
+.card,
+button {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+}
 
+.card,
+button {
+  background: #f2f2f2;
+  border: 0;
+  border-radius: 2px;
+  color: black;
+}
 
-  body{
-    font-size: 1.5rem;
-  }
-  .welcomeCard, .brownPanel, .whitePanel, .whiteHeader, .card, button {
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
-  }
+.brownPanel,
+.whitePanel,
+.whiteHeader {
+  background-color: #f2f2f2;
+  padding: 3rem;
+}
 
-  .card, button {
-    background: #f2f2f2;
-    border: 0;
-    border-radius: 2px;
-    color: black;
-  }
+.textCenter {
+  text-align: center;
+}
 
-  .brownPanel, .whitePanel, .whiteHeader {
-    background-color: #f2f2f2;
-    padding: 3rem;
-  }
+.vCenter {
+  margin: 25% 0;
+}
 
-  .textCenter {
-    text-align: center;
-  }
+.fa-file-download {
+  padding-left: 1.5rem;
+  font-size: 1.5rem;
+}
 
-  .vCenter {
-    margin: 25% 0;
-  }
-
-  .fa-file-download {
-    padding-left: 1.5rem;
-    font-size: 1.5rem;
-  }
-
-  @media screen and (max-width: 576px) {
-    iframe {
-      width: 100%;
-    }
-  }
-  @font-face {
-    font-family: "Archer";
-    src: url("Assets/Fonts/Archer-Semibold.otf") format("opentype");
-  }
-  @font-face {
-    font-family: "CenturyGothic";
-    src: url("Assets/Fonts/Century-Gothic.otf") format("opentype");
-  }
-  @font-face {
-    font-family: "MyriadPro";
-    src: url("Assets/Fonts/Myriad-Pro-Regular.ttf") format("opentype");
-  }
-  h1 {
-    font-family: "Carista";
-  }
-
-  h2, h3, h4, h5, h6 {
-    font-family: "CenturyGothic";
-    color: var(--olym-red);
-  }
-
-  .display-1 {
-    font-size: 5rem;
-  }
-
-  .display-5 {
-    font-size: 1.5rem;
-  }
-
-  p, a {
-    font-family: "Times New Roman";
-  }
-
-  a:hover {
-    text-decoration: none;
-  }
-
-  @media screen and (max-width: 576px) {
-    .display-1, h1 {
-      font-size: 3rem;
-    }
-
-    h3 {
-      font-size: 2rem;
-    }
-  }
-  #masthead {
+@media screen and (max-width: 576px) {
+  iframe {
     width: 100%;
   }
+}
+@font-face {
+  font-family: "Archer";
+  src: url("Assets/Fonts/Archer-Semibold.otf") format("opentype");
+}
+@font-face {
+  font-family: "CenturyGothic";
+  src: url("Assets/Fonts/Century-Gothic.otf") format("opentype");
+}
+@font-face {
+  font-family: "MyriadPro";
+  src: url("Assets/Fonts/Myriad-Pro-Regular.ttf") format("opentype");
+}
+h1 {
+  font-family: "Carista";
+}
 
-  button {
-    box-shadow: none;
-    padding: 1rem 4rem;
-    border: 3px solid #f2f2f2;
-    transition: background-color 100ms;
-  }
-  button:hover {
-    background-color: #f2f2f2;
-    color: var(--olym-blue);
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "CenturyGothic";
+  color: var(--olym-red);
+}
+
+.display-1 {
+  font-size: 5rem;
+}
+
+.display-5 {
+  font-size: 1.5rem;
+}
+
+p,
+a {
+  font-family: "Times New Roman";
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 576px) {
+  .display-1,
+  h1 {
+    font-size: 3rem;
   }
 
+  h3 {
+    font-size: 2rem;
+  }
+}
+#masthead {
+  width: 100%;
+}
+
+button {
+  box-shadow: none;
+  padding: 1rem 4rem;
+  border: 3px solid #f2f2f2;
+  transition: background-color 100ms;
+}
+button:hover {
+  background-color: #f2f2f2;
+  color: var(--olym-blue);
+}
+
+.whiteHeader {
+  max-width: 50%;
+  margin-bottom: 3rem;
+  min-width: 350px;
+}
+.whiteHeader::after {
+  content: "";
+  position: absolute;
+  border-bottom: 0.5rem solid var(--olym-red);
+  width: 15rem;
+  bottom: 4rem;
+  left: 3rem;
+}
+
+.whitePanel--deadline {
+  margin: 1rem;
+  width: auto;
+  position: relative;
+}
+.whitePanel--deadline::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
+  padding: 15px;
+  color: var(--olym-red);
+  font-size: 3rem;
+  position: absolute;
+  right: 5%;
+  top: 30%;
+}
+
+.brownPanel {
+  border-style: solid;
+  border-color: var(--olym-yellow);
+  border-width: 50px 8px 8px;
+  border-radius: 3px;
+}
+.brownPanel::before {
+  content: "";
+  border-bottom: 10px solid white;
+  border-radius: 5px;
+  width: 50%;
+  margin: auto;
+  position: absolute;
+  top: -15%;
+  left: 1.25em;
+  right: 1.25em;
+}
+
+.brownPanel--downloads {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+.brownPanel--downloads::before {
+  top: 1rem;
+  width: 35%;
+}
+
+@media screen and (max-width: 995px) {
+  .brownPanel--downloads {
+    margin-top: 5%;
+  }
+}
+@media screen and (max-width: 576px) {
   .whiteHeader {
-    max-width: 50%;
-    margin-bottom: 3rem;
-    min-width: 350px;
-  }
-  .whiteHeader::after {
-    content: "";
-    position: absolute;
-    border-bottom: 0.5rem solid var(--olym-red);
-    width: 15rem;
-    bottom: 4rem;
-    left: 3rem;
+    min-width: 100%;
   }
 
+  .whitePanel {
+    padding: 1.5rem;
+    width: 100%;
+    margin: 0;
+  }
   .whitePanel--deadline {
-    margin: 1rem;
-    width: auto;
-    position: relative;
+    margin-bottom: 1rem;
   }
   .whitePanel--deadline::after {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: "";
-    padding: 15px;
-    color: var(--olym-red);
-    font-size: 3rem;
-    position: absolute;
-    right: 5%;
-    top: 30%;
+    position: relative;
   }
 
   .brownPanel {
+<<<<<<< HEAD
     border-style: solid;
     border-color: #78676C;
     border-width: 50px 8px 8px;
     border-radius: 3px;
+=======
+    padding: 1.5rem;
+>>>>>>> a70899a2320b135e40ad0f2bd605be67bd3b3c67
   }
   .brownPanel::before {
-    content: "";
-    border-bottom: 10px solid white;
-    border-radius: 5px;
-    width: 50%;
-    margin: auto;
-    position: absolute;
-    top: -15%;
-    left: 1.25em;
-    right: 1.25em;
+    top: -12%;
   }
 
   .brownPanel--downloads {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding-top: 8rem;
-    padding-bottom: 8rem;
+    margin-top: 5%;
   }
-  .brownPanel--downloads::before {
-    top: 1rem;
-    width: 35%;
-  }
+}
+.brownPanel__item {
+  flex: 1;
+  margin: 1rem;
+}
 
-  @media screen and (max-width: 995px) {
-    .brownPanel--downloads {
-      margin-top: 5%;
-    }
-  }
-  @media screen and (max-width: 576px) {
-    .whiteHeader {
-      min-width: 100%;
-    }
+.brownPanel__item > button {
+  background-color: var(--olym-red);
+  color: #f2f2f2;
+  width: 100%;
+  height: 100%;
+}
 
-    .whitePanel {
-      padding: 1.5rem;
-      width: 100%;
-      margin: 0;
-    }
-    .whitePanel--deadline {
-      margin-bottom: 1rem;
-    }
-    .whitePanel--deadline::after {
-      position: relative;
-    }
+.card {
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem;
+}
 
-    .brownPanel {
-      padding: 1.5rem;
-    }
-    .brownPanel::before {
-      top: -12%;
-    }
+.card__img {
+  border-radius: 50%;
+  max-width: 50%;
+}
 
-    .brownPanel--downloads {
-      margin-top: 5%;
-    }
-  }
-  .brownPanel__item {
-    flex: 1;
-    margin: 1rem;
-  }
+#clockdiv {
+  color: #red;
+  display: inline-block;
+  font-weight: 100;
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
-  .brownPanel__item > button {
-    background-color: var(--olym-red);
-    color: #f2f2f2;
-    width: 100%;
-    height: 100%;
-  }
+#clockdiv > div {
+  flex: 1;
+  padding: 10px;
+  border-radius: 3px;
+  display: inline-block;
+  color: black;
+  font-family: "CenturyGothic";
+}
 
-  .card {
-    text-align: center;
-    padding: 1rem;
-    margin: 1rem;
-  }
+#clockdiv div > span {
+  color: white;
+  padding: 15px;
+  border-radius: 3px;
+  background: var(--olym-red);
+  display: inline-block;
+  width: 100%;
+}
 
-  .card__img {
-    border-radius: 50%;
-    max-width: 50%;
-  }
+.smalltext {
+  padding-top: 5px;
+  font-size: 16px;
+}
 
+@media screen and (max-width: 576px) {
   #clockdiv {
     color: black;
     display: inline-block;
@@ -274,137 +332,153 @@
     height: 100vh;
     padding-top: 2.5%;
   }
+}
+#landing {
+  background-color: var(--olym-blue);
+}
 
-  .card--landing {
+#btnSouth {
+  margin-left: 5px;
+}
+
+.container--landing {
+  height: 100vh;
+  padding-top: 2.5%;
+}
+
+.card--landing {
+  margin: 0;
+  text-align: left;
+}
+
+.footer {
+  background-image: url("Assets/white_stripes.png");
+}
+
+.footer--landing {
+  position: absolute;
+  bottom: 0;
+  /*z-index: -1;*/
+}
+
+.vCenter--landing {
+  margin-top: 5%;
+}
+
+.brownPanel--slideshow {
+  padding: 0.8rem;
+}
+
+.welcomeCard {
+  padding: 25px;
+  transition: transform 100ms;
+}
+.welcomeCard:hover {
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 995px) {
+  #landingBtnHolder {
+    margin-top: 1rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  #landingHero {
     margin: 0;
-    text-align: left;
+    padding: 2rem;
   }
 
-  .footer{
-    background-image: url("Assets/white_stripes.png");
+  .container--landing {
+    position: relative;
+    height: auto;
   }
 
   .footer--landing {
-    position: absolute;
-    bottom: 0;
-    /*z-index: -1;*/
+    bottom: auto;
   }
 
-  .vCenter--landing {
-    margin-top: 5%;
+  a[href="north.html"],
+  a[href="south.html"] {
+    width: 100%;
+    margin: 0.5rem;
   }
 
-  .brownPanel--slideshow {
-    padding: 0.8rem;
+  a[href="north.html"] > button,
+  a[href="south.html"] > button {
+    width: 100%;
   }
 
-  .welcomeCard {
-    padding: 25px;
-    transition: transform 100ms;
-  }
-  .welcomeCard:hover {
-    transform: scale(1.05);
+  .card--landing {
+    margin: 0.5rem;
   }
 
-  @media screen and (max-width: 995px) {
-    #landingBtnHolder {
-      margin-top: 1rem;
-    }
+  #btnSouth {
+    margin-left: 0;
   }
-  @media screen and (max-width: 576px) {
-    #landingHero {
-      margin: 0;
-      padding: 2rem;
-    }
+}
+#north {
+  background-color: var(--olym-blue);
+}
 
-    .container--landing {
-      position: relative;
-      height: auto;
-    }
+#south {
+  background-color: var(--olym-blue);
+}
 
-    .footer--landing {
-      bottom: auto;
-    }
+.header {
+  padding-left: 0;
+  position: relative;
+}
 
-    a[href="north.html"], a[href="south.html"] {
-      width: 100%;
-      margin: 0.5rem;
-    }
+.container--main {
+  height: 100vh;
+  padding-top: 12%;
+}
+.container--desc,
+.container--docs,
+.container--deadlines,
+.container--committee .container--schedule {
+  margin-bottom: 10%;
+}
+.container--deadlines {
+  padding: 0;
+}
 
-    a[href="north.html"] > button, a[href="south.html"] > button {
-      width: 100%;
-    }
-
-    .card--landing {
-      margin: 0.5rem;
-    }
-
-    #btnSouth {
-      margin-left: 0;
-    }
+@media screen and (max-width: 576px) {
+  .container {
+    margin: 4%;
+    padding: 0;
   }
-  #north {
-    background-color: var(--olym-blue);
-  }
-
-  #south {
-    background-color: var(--olym-blue);
-  }
-
-  .header {
-    padding-left: 0;
-    position: relative;
-  }
-
   .container--main {
-    height: 100vh;
-    padding-top: 12%;
+    height: auto;
   }
-  .container--desc, .container--docs, .container--deadlines, .container--committee .container--schedule{
-    margin-bottom: 10%;
-  }
-  .container--deadlines {
+
+  .col-md-8 {
     padding: 0;
   }
 
-
-
-  @media screen and (max-width: 576px) {
-    .container {
-      margin: 4%;
-      padding: 0;
-    }
-    .container--main {
-      height: auto;
-    }
-
-    .col-md-8 {
-      padding: 0;
-    }
-
-    #downloads {
-      margin: 0;
-    }
-
-    .display-5 > button {
-      width: 95%;
-      margin-top: 0.5rem;
-    }
-  }
-  @media screen and (max-width: 1000px) {
-    .container--main {
-      height: auto;
-    }
+  #downloads {
+    margin: 0;
   }
 
-  /*# sourceMappingURL=main.css.map */
-
-  /* BEGIN TABLE CSS */
-  *{
-    box-sizing:border-box;
+  .display-5 > button {
+    width: 95%;
+    margin-top: 0.5rem;
   }
+}
+@media screen and (max-width: 1000px) {
+  .container--main {
+    height: auto;
+  }
+}
 
-  /*Mustard: #FFD941
+/*# sourceMappingURL=main.css.map */
+
+/* BEGIN TABLE CSS */
+* {
+  box-sizing: border-box;
+}
+
+/*Mustard: #FFD941
   Coral: #F47A55
   Rosewood: 691010
   Rose Vale: A84545
@@ -415,72 +489,136 @@
   Dark olive green 4E6A15
   Colombia Blue C8E6F0 */
 
-  body{
-    background-color: #C8E6F0;
-  }
+body {
+  background-color: #c8e6f0;
+}
 
-  .light{
-    background-color: #fff;
-  }
+.light {
+  background-color: #fff;
+}
 
-  .calendar{
-    width:100%;
-    box-shadow: 0px 0px 35px -16px rgba(0,0,0,0.75);
-    font-family: 'CenturyGothic';
-    padding: 20px 30px;
-    color:#363b41;
-    display: inline-block;
-  }
-  .calendar_events{
-    color:$light_grey;
-  }
-  .ce_title{
-    font-size:14px;
-  }
+.calendar {
+  width: 100%;
+  box-shadow: 0px 0px 35px -16px rgba(0, 0, 0, 0.75);
+  font-family: "CenturyGothic";
+  padding: 20px 30px;
+  color: #363b41;
+  display: inline-block;
+}
+.calendar_events {
+  color: $light_grey;
+}
+.ce_title {
+  font-size: 14px;
+}
 
-  .event_item{
-    margin: 18px 0;
-    padding:5px;
-    cursor: pointer;
-    &:hover{
-      background-image: linear-gradient(-222deg, #FF8494, #ffa9b7);
-      box-shadow: 0px 0px 52px -18px rgba(0, 0, 0, 0.75);
-      .ei_Dot{
-        background-color: #fff;
-      }
-      .ei_Copy,.ei_Title{
-        color:#fff;
-      }
-    }
-  }
-
-  .event_item:hover{
-    background-color: #bfdeff;
-    .ei_Copy,.ei_Title{
-      color: white;
-    }
-  }
-
-  .ei_Dot,.ei_Title{
-    display:inline-block;
-  }
-
-  .ei_Dot{
-    border-radius:50%;
-    width:10px;
-    height: 10px;
-    background-color: var(--olym-blue);
+.event_item {
+  margin: 18px 0;
+  padding: 5px;
+  cursor: pointer;
+  &:hover {
+    background-image: linear-gradient(-222deg, #ff8494, #ffa9b7);
     box-shadow: 0px 0px 52px -18px rgba(0, 0, 0, 0.75);
+    .ei_Dot {
+      background-color: #fff;
+    }
+    .ei_Copy,
+    .ei_Title {
+      color: #fff;
+    }
   }
+}
 
-  .ei_Title{
-    font-size:1.6rem;
-    margin-left:10px;
-    color:#363b41;
-    font-style: italic;
+.event_item:hover {
+  background-color: #bfdeff;
+  .ei_Copy,
+  .ei_Title {
+    color: white;
   }
+}
 
-  .ei_Copy{
-    font-size:1.8rem;
-    margin-left:27px;
-  }
+.ei_Dot,
+.ei_Title {
+  display: inline-block;
+}
+
+.ei_Dot {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: var(--olym-blue);
+  box-shadow: 0px 0px 52px -18px rgba(0, 0, 0, 0.75);
+}
+
+.ei_Title {
+  font-size: 1.6rem;
+  margin-left: 10px;
+  color: #363b41;
+  font-style: italic;
+}
+
+.ei_Copy {
+  font-size: 1.8rem;
+  margin-left: 27px;
+}
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
