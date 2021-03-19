@@ -138,7 +138,7 @@
 
   .brownPanel {
     border-style: solid;
-    border-color: var(--olym-yellow);
+    border-color: #78676C;
     border-width: 50px 8px 8px;
     border-radius: 3px;
   }
@@ -223,7 +223,7 @@
   }
 
   #clockdiv {
-    color: #red;
+    color: black;
     display: inline-block;
     font-weight: 100;
     text-align: center;
@@ -247,7 +247,7 @@
     color: white;
     padding: 15px;
     border-radius: 3px;
-    background: var(--olym-red);
+    background: #A84545;
     display: inline-block;
     width: 100%;
   }
