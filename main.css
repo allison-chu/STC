@@ -8,6 +8,8 @@
   src: url(../Fonts/CenturyGothic.ttf) format("truetype");
 }
 
+
+
 body {
   font-size: 1.5rem;
 }
@@ -426,16 +428,17 @@ button:hover {
   position: relative;
 }
 
-.container--main {
-  height: 100vh;
+#home,
+#registration,
+#workshops,
+#schedule,
+#contact{
   padding-top: 12%;
 }
-.container--desc,
-.container--docs,
-.container--deadlines,
-.container--committee .container--schedule {
-  margin-bottom: 10%;
-}
+
+
+
+
 .container--deadlines {
   padding: 0;
 }
@@ -590,8 +593,9 @@ body {
 .tabcontent {
   display: none;
   padding: 6px 12px;
-  border: 1px solid #ccc;
+  border: 1px solid #C8E6F0;
   border-top: none;
+  font-family: "CenturyGothic";
 }
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
@@ -609,7 +613,7 @@ body {
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active,
 .accordion:hover {
-  background-color: #ccc;
+  background-color: #ABABAB;
 }
 
 /* Style the accordion panel. Note: hidden by default */
@@ -618,4 +622,5 @@ body {
   background-color: white;
   display: none;
   overflow: hidden;
+  font-family: "CenturyGothic";
 }
