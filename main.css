@@ -73,14 +73,21 @@ h1 {
   font-family: "Baron";
 }
 
-h2,
-h3,
-h4,
+
+
 h5,
 h6 {
   font-family: "CenturyGothic";
-  color: var(--olym-red);
+  font-size: 23px;
 }
+
+h3,
+h4,
+h2{
+  font-family: "CenturyGothic";
+
+}
+
 
 .display-1 {
   font-size: 5rem;
@@ -527,6 +534,10 @@ body {
 
 .light {
   background-color: #fff;
+}
+
+.text-center{
+  margin-bottom: 30px;
 }
 
 .calendar {
