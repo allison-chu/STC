@@ -8,8 +8,6 @@
   src: url(../Fonts/CenturyGothic.ttf) format("truetype");
 }
 
-
-
 body {
   font-size: 1.5rem;
 }
@@ -73,8 +71,6 @@ h1 {
   font-family: "Baron";
 }
 
-
-
 h5,
 h6 {
   font-family: "CenturyGothic";
@@ -83,11 +79,9 @@ h6 {
 
 h3,
 h4,
-h2{
+h2 {
   font-family: "CenturyGothic";
-
 }
-
 
 .display-1 {
   font-size: 5rem;
@@ -178,7 +172,7 @@ button:hover {
 
 .brownPanel {
   border-style: solid;
-  border-color: #78676C;
+  border-color: #78676c;
   border-width: 50px 8px 8px;
   border-radius: 3px;
 }
@@ -230,7 +224,7 @@ button:hover {
 
   .brownPanel {
     border-style: solid;
-    border-color: #78676C;
+    border-color: #78676c;
     border-width: 50px 8px 8px;
     border-radius: 3px;
     padding: 1.5rem;
@@ -266,13 +260,13 @@ button:hover {
   max-width: 50%;
 }
 
-.logo{
+.logo {
   width: 80px;
   height: 80px;
   margin-left: 20px;
 }
 
-.reg-img{
+.reg-img {
   width: 100px;
   height: 100px;
   display: block;
@@ -306,7 +300,7 @@ button:hover {
   color: white;
   padding: 15px;
   border-radius: 3px;
-  background: #A84545;
+  background: #a84545;
   display: inline-block;
   width: 100%;
 }
@@ -342,7 +336,7 @@ button:hover {
     color: white;
     padding: 15px;
     border-radius: 3px;
-    background: #A84545;
+    background: #a84545;
     display: inline-block;
     width: 100%;
   }
@@ -471,12 +465,9 @@ button:hover {
 #registration,
 #workshops,
 #schedule,
-#contact{
+#contact {
   padding-top: 8%;
 }
-
-
-
 
 .container--deadlines {
   padding: 0;
@@ -536,7 +527,7 @@ body {
   background-color: #fff;
 }
 
-.text-center{
+.text-center {
   margin-bottom: 30px;
 }
 
@@ -636,7 +627,7 @@ body {
 .tabcontent {
   display: none;
   padding: 6px 12px;
-  border: 1px solid #C8E6F0;
+  border: 1px solid #c8e6f0;
   border-top: none;
   font-family: "CenturyGothic";
 }
@@ -656,7 +647,7 @@ body {
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active,
 .accordion:hover {
-  background-color: #ABABAB;
+  background-color: #ababab;
 }
 
 /* Style the accordion panel. Note: hidden by default */
@@ -666,4 +657,10 @@ body {
   display: none;
   overflow: hidden;
   font-family: "CenturyGothic";
+}
+hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-top: 5px dashed black;
+  opacity: 0.75;
 }
