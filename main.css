@@ -78,9 +78,13 @@ h6 {
 }
 
 h3,
-h4,
+h4 {
+  font-family: "CenturyGothic";
+}
+
 h2 {
   font-family: "CenturyGothic";
+  font-size: 32px;
 }
 
 .display-1 {
@@ -662,5 +666,5 @@ hr {
   margin-top: 10px;
   margin-bottom: 10px;
   border-top: 5px dashed black;
-  opacity: 0.75;
+  opacity: 0.50;
 }
