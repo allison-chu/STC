@@ -680,8 +680,8 @@ button.empty {
   outline: none;
   transition: 0.4s;
 }
-.container--desc {
+.container--announce {
   overflow: scroll;
-  height: 500px;
-  width: 1200px;
+  height: 565px;
+  width: 1100;
 }
